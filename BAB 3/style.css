@@ -1,0 +1,271 @@
+*,
+html {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    height: 60px;
+    width: auto;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+}
+
+nav div img {
+    width: 300px;
+    margin-top: 15px;
+    padding-left: 50px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-weight: 600;
+    padding: 3px;
+}
+
+nav ul li a:hover {
+    color: #3f72af;
+    border-bottom: 1px solid #3f72af;
+}
+
+.btn_login {
+    background-color: #3f72af;
+    color: white;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.btn_login:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+section img {
+    width: 700px;
+    margin: 50px;
+    margin-right: 50px;
+}
+
+.kolom {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 0px;
+}
+
+form {
+    text-align: center;
+    width: 300px;
+    border: 1px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.transportasi-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.transportasi {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.transportasi img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.transportasi p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #000000;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 1000%;
+    background-color: white;
+    padding: 10px 10px;
+    margin: 50px auto;
+    box-shadow: 0 6px 12px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    position: relative;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.home-content h1 {
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.home-content h3 {
+    margin-top: 30px;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown button {
+    display: inline-block;
+    background-color: #3f72af;
+    flex-direction: column;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    align-items: left;
+}
+
+.dropdown a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .list {
+    display: none;
+    position: absolute;
+    background-color: #082A98;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #000;
+}
+
+.dropdown .list a {
+    display: inline-block;
+}
+
+.dropdown:hover .list {
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: #9aaff4;
+}
+
+.dropdown a:hover {
+    background-color: #676d7f;
+}
+
+.table-data {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 5px 20px;
+}
+
+tbody {
+    text-align: left;
+}
+
+section#cek_pesanan {
+    padding: 20px;
+}
+
+section#cek_pesanan .tengah {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+section#cek_pesanan form {
+    margin-top: 20px;
+}
+
+section#cek_pesanan input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+section#cek_pesanan button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+section#cek_pesanan button:hover {
+    background-color: #45a049;
+}

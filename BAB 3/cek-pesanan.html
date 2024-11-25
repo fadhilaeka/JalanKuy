@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Cek Pesanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="logo.png" alt="my-logo"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="cek-pesanan.html">Cek Pesanan</a></li>
+            </ul>     
+        </div>
+    </nav>
+    <section id="cek_pesanan">
+        <div class="tengah">
+            <h1>Cek Pesanan Anda</h1>
+            <form id="pesananForm">
+                <label for="order_id">Masukkan Kode Pesanan Anda:</label><br>
+                <input type="text" id="order_id" name="order_id" placeholder="Contoh: ORD123456" required><br><br>
+                <button type="submit">Cek Status</button>
+            </form>
+            
+            <div id="hasil" style="display:none;">
+                <h2>Detail Pesanan</h2>
+                <table>
+                    <tr>
+                        <th>Kode Pesanan</th>
+                        <th>Jenis Transportasi</th>
+                        <th>Kelas</th>
+                        <th>Waktu Keberangkatan</th>
+                    </tr>
+                    <tr>
+                        <td id="result_order_id"></td>
+                        <td id="result_transportasi"></td>
+                        <td id="result_kelas"></td>
+                        <td id="result_waktu"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

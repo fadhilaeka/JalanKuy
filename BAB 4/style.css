@@ -1,0 +1,412 @@
+*,
+html {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    height: 60px;
+    width: auto;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+}
+
+nav div img {
+    width: 300px;
+    margin-top: 15px;
+    padding-left: 50px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-weight: 600;
+    padding: 3px;
+}
+
+nav ul li a:hover {
+    color: #3f72af;
+    border-bottom: 1px solid #3f72af;
+}
+
+.btn_login {
+    background-color: #3f72af;
+    color: white;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.btn_login:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+section img {
+    width: 700px;
+    margin: 50px;
+    margin-right: 50px;
+}
+
+.kolom {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 0px;
+}
+
+form#dataForm {
+    width: 90%;
+    border: 1px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-weight: bold;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+form#pesananForm {
+    width: 70%;
+    border: 1px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-weight: bold;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+form{
+    width: 20%;
+    border: 1px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.transportasi {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.transportasi img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.transportasi p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #000000;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 1000%;
+    background-color: white;
+    padding: 10px 10px;
+    margin: 50px auto;
+    box-shadow: 0 6px 12px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    position: relative;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.home-content h1 {
+    color: #364f6b;
+    font-size: 50px;
+    text-align: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.home-content h3 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+select#transportation,
+select#from,
+select#to {
+    margin-bottom: 15px;
+}
+
+.dropdown {
+    display: inline;
+}
+
+.dropdown button {
+    display: inline-block;
+    background-color: #3f72af;
+    flex-direction: column;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    align-items: left;
+}
+
+.dropdown a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .list {
+    display: none;
+    position: absolute;
+    background-color: #082A98;
+    min-width: 30%;
+    box-shadow: 2px 2px 5px #000;
+}
+
+.dropdown .list a {
+    display: inline-block;
+}
+
+.dropdown:hover .list {
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: #9aaff4;
+}
+
+.dropdown a:hover {
+    background-color: #676d7f;
+}
+
+select {
+    background-color: #3f72af;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 20%;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: #082A98;
+}
+
+.btn {
+	background-color: #3f72af;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn a {
+	text-decoration: none;
+	color: white;
+}
+
+.btn-tambah {
+	margin: 10px 0;
+}
+
+.btn-simpan {
+	width: 100%;
+}
+
+.btn:hover {
+	background-color: #082A98;
+}
+
+.form-login {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	background-color: white;
+	padding: 30px;
+	margin: 10px auto;
+	border-radius: 10px;
+}
+
+input {
+	width: 100%;
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid rgb(148, 148, 148);
+}
+
+
+table {
+    margin-left: -30%;
+}
+
+.table-data {
+    align-items: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td {
+    border: 1px solid black;
+    padding: 5px 20px;
+}
+
+tbody {
+    text-align: left;
+}
+
+section#cek_pesanan {
+    padding: 20px;
+}
+
+section#cek_pesanan .tengah {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+section#cek_pesanan form {
+    margin-top: 20px;
+    align-items: center;
+}
+
+section#cek_pesanan input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+section#cek_pesanan button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+section#cek_pesanan button:hover {
+    background-color: #45a049;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    background-color: #d9d9d9;
+    color: #364f6b;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.card {
+    background-color: #f2f2f2;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.card .header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card .header p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: right;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
